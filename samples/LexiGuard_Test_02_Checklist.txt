@@ -1,0 +1,63 @@
+﻿LEXIGUARD TEST 02 - EXPECTED RESULTS
+For the person testing the app. Upload only the PDF, not this checklist.
+This is a fictional software test, not legal advice or a signing template.
+
+SOURCE
+LexiGuard_Test_02_Editing_Agreement.pdf
+One physical PDF page. Every valid page citation must be page 1.
+
+HOW TO TEST
+1. Replace the previous PDF in LexiGuard with this new PDF.
+2. Before generating, the previous document's report/download should disappear.
+3. Click Generate report once. Compare its CURRENT report with this checklist.
+4. Download the text report. Check its source filename and reported details.
+5. Do not upload this answer checklist to the model as part of the document.
+
+EXPECTED FACTS
+Provider: Harbor Pine Editorial.
+Client: Mango Trail Books.
+Work: edit 20 product descriptions; deliver editable text, possibly in batches.
+Client supplies original drafts and feedback.
+Start: 15 November 2026.
+Scheduled end: 14 January 2027, unless cancelled earlier.
+Fee: one-time INR 18,000 for the completed project; not a monthly fee.
+Normal invoice: issued on final delivery.
+Payment deadline: within 7 days of the invoice date, for all invoices.
+
+EXPECTED CLAUSE RESULTS
+Fees and payment: identified, with the fee and invoice timing above.
+Term and dates: identified, with the start/end dates above.
+Renewal: identified; the document expressly says it does not renew automatically.
+Cancellation: identified; either party can cancel with AT LEAST 10 days' WRITTEN notice.
+If cancellation takes effect before final delivery, the client pays INR 900 for
+each description BOTH completed AND delivered before cancellation takes effect,
+capped at INR 18,000. The invoice is issued on the effective cancellation date.
+Early exit fee: identified as an explicit negative provision:
+"No additional early exit fee applies."
+Payment for delivered work must not be described as an extra early exit fee.
+
+DELIBERATELY OMITTED CATEGORIES
+Confidentiality: no relevant provision included in this test PDF.
+Liability: no relevant provision included in this test PDF.
+Changes to terms: no relevant provision included in this test PDF.
+For each, the app should say "AI did not identify this clause; absence is
+unverified" or similarly cautious wording. A not_found field should have an
+empty evidence list. Do not invent terms to fill these categories.
+
+WHAT COUNTS AS A PROBLEM
+- Reuses Cedar Finch Studio, Blue Lantern Supplies, INR 12,000 or INR 24,000.
+- Calls the fee monthly, adds an automatic renewal, or invents an extra exit fee.
+- Uses the old 30-day cancellation or 60-day renewal notice periods.
+- Omits "at least", "written", "both completed and delivered", the pre-final-
+  delivery condition, or the payment cap from the relevant explanation.
+- Invents a two-year confidentiality duty, liability cap or amendment procedure.
+- Cites PDF page 2 or any other page that does not exist in this one-page PDF.
+- Shows an old report or old download after switching documents.
+
+HOW TO INTERPRET THE CHECKS
+An explicit statement that no additional exit fee applies is information found
+in the document. A topic the AI did not identify is a different situation.
+Exact quote matches do not prove that the AI's explanations are correct.
+Check both wording and meaning. A review or a correction attempt is not proof
+of accuracy. Two API requests are normal when no quote correction is needed;
+three means the app attempted its one permitted quote correction.
