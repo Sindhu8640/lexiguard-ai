@@ -1,0 +1,6 @@
+streamlit==1.63.0
+google-genai==2.23.0
+pydantic==2.13.5
+pypdf==6.18.1
+pypdfium2==5.13.0
+Pillow==12.3.0
