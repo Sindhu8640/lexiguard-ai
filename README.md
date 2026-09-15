@@ -2,6 +2,10 @@
 
 A Python/Streamlit learning prototype that reads PDF agreements, creates a structured report, checks quoted evidence, and flags possible missing conditions in AI explanations.
 
+Live demo: [Open LexiGuard AI](https://lexiguard-ai-msjeudb7fxxxxvp8mafojv.streamlit.app/). Source repository: [Sindhu8640/lexiguard-ai](https://github.com/Sindhu8640/lexiguard-ai).
+
+The live demo is available. See `LIVE_DEMO.md` for demonstration steps and verification status. If an access code is requested, obtain it separately from the project owner.
+
 ## Quick local setup (Windows / VS Code)
 
 Open this folder in VS Code and use Terminal → New Terminal:
@@ -79,9 +83,9 @@ These tests use mocked AI responses and the bundled fictional samples. They veri
 2. Upload `app.py`, `requirements.txt`, `.streamlit/config.toml`, the README and samples. Never upload `.streamlit/secrets.toml`, `.env`, `.venv` or actual credentials.
 3. Sign in at https://share.streamlit.io/ and create an app from that repository. Select `app.py` as the entry point and Python 3.12.
 4. In the deployment's Advanced settings / Secrets, enter your own `GEMINI_API_KEY` and a private `APP_ACCESS_CODE` for the demo. Share the access code separately with your evaluator.
-5. Deploy, wait for dependency installation, then test the generated `.streamlit.app` URL with a fictional sample. Copy that actual URL into your submission; this package does not invent a hosted URL.
+5. Deploy, wait for dependency installation, then test the generated `.streamlit.app` URL with a fictional sample. This project's deployed URL is linked above.
 
-If the provider rejects a pinned dependency version, inspect its build log before changing versions. The versions here match the locally available SDK/UI environment; the final cloud build must still be checked.
+See `LIVE_DEMO.md` and `TEST_RESULTS.md` for this deployment's verification status. For a future deployment, inspect the build log before changing dependency versions if installation fails.
 
 Official references:
 - Streamlit deployment: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy

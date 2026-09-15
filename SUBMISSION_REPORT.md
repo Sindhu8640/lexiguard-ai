@@ -21,10 +21,13 @@ In guided user testing, the app displayed a quote mismatch when AI inserted an e
 
 Automated tests simulate responses to test validation and control flow. Their passing results are not a measure of legal accuracy. New OCR and explanation-check model quality requires live evaluation after setup/deployment.
 
+## Live deployment
+The app is hosted on Streamlit Community Cloud: [Open LexiGuard AI](https://lexiguard-ai-msjeudb7fxxxxvp8mafojv.streamlit.app/). The source repository is [Sindhu8640/lexiguard-ai](https://github.com/Sindhu8640/lexiguard-ai). See `LIVE_DEMO.md` and `TEST_RESULTS.md` for the verified behavior. The private demo access code is shared separately, not included in the source or ZIP.
+
 ## Limitations and future work
 AI and OCR errors remain possible. Exact quote checks validate wording and page placement only. Explanation findings are probabilistic and may be wrong. The UI preserves uncertainty and does not automatically accept suggested rewrites. The demonstration has explicit file/context/request limits and is not an exhaustive legal-analysis product.
 
 Production work would require a representative evaluation corpus, stronger authentication and account-level abuse controls, privacy/compliance review, provider and retention decisions, monitoring, accessibility testing, and professional review of the intended use.
 
 ## Submission items
-Source code, pinned dependencies, sample PDFs, a sample checklist, offline tests, local/deployment instructions, and a container configuration are included. Add the actual live URL only after the cloud deployment succeeds and has been tested.
+Source code, pinned dependencies, sample PDFs, a sample checklist, offline tests, validation results, local/deployment instructions, live demo steps and a container configuration are included. The actual deployed URL is recorded above.
