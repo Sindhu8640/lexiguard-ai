@@ -1,0 +1,10 @@
+[server]
+maxUploadSize = 20
+enableXsrfProtection = true
+enableCORS = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#177C79"
